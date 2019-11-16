@@ -1,26 +1,13 @@
+var Password = document.getElementById ("Pass");
+var Ganerate = document.getElementById ("submit");
+var Clipboard = document.getElementById("Copy");
+var randomPassword = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCCVBNM0123456789!@#$%^&*()_+<>?/;'";
 
 
-var Password = document.getElementById("Password");
-var submit = document.querySelector("#button");
-var copy = document.querySelector("#button2");
-var character ="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCCVBNM0123456789!@#$%^&*()_+<>?/;'";
-var Pass = "";
+function randomPassword (){
+    var Password = Password + randomPassword;
+    randomPassword = randomPassword+Math.floor(Math.random("Password"+length)+1;)
 
-function generate() {
-    for (var i=0; i <= character.length; i++) {
-        var i = Math.floor(Math.random()*character.length);
-        Passs = character[i];
-  
-        return Pass;
-   }
-
+    return randomPassword;
 }
 
-
-function generate2() {
-    let Password2 = Math.floor(Math.random()*character.length);
-    console.log(Password2);
-}
- 
-submit.addEventListener("click",generate2);
-clipboard.addEventListener("click",generate);
