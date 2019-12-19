@@ -5,40 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Password Generate</title>
-    <link rel="stylesheet" href="style.css" type ="text/css"> 
+    <link rel="stylesheet" href="./style.css" type ="text/css"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 
 </head>
 
 <body>
- <div class="container">
- <div class="jumbotron">
-    <h2 class="display-4"><center>Password Generator</center></h2>
-    <center>
-        <div class="card" style="width: 25rem;">
-            <div class="card-body">
-                <p id="Pass"><center>Your Secure Password</center></p>
-                <center>
-                <form id="Pass">
-                <input type="text" id="Password"  >
-                </form>
-                </center>
-            </div>
-        </div>
-    </center>
-      <br>
-    <center>
-      
-        <button Onclick="submit" id="button">Generate Password</button>  
-        <button Onclick="Copy" id="button2">Copy to Clipboard</button>
-      
-    </center>
-  
-  </div>
+    <div class="jumbotron">
+        <h2 class="display-4"><center>Password Generator</center></h2>
+   <form name="mypassform" method="post" action="">
+       <input type="hidden" name="length" value="10">
+       <table width="100%" border="0"></table>
+   <div class="all">
+       <center>
+           <div class="container">
+               <td>
+                   <input name="pass1" type="text" size="100">
+                   <br>
+                   <input type="button" class="button" value="Generate Password" onClick="generatepassword();" tabindex="2">
+                   <input type="button" class="copy" value="Copy to Clipboard" onClick="copy();" tabindex="2">
+       </center>
+   </div>
+   </table>
+   </form>
 </div>
-
 </body>
-
-
 </html>
